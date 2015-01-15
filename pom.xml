@@ -4,9 +4,16 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
+  <!-- This fork only exists until the original author puts this library in maven central -->
+  <parent>
+    <artifactId>zillow-distribution-management</artifactId>
+    <groupId>com.zillow</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
   <groupId>org.docopt</groupId>
   <artifactId>docopt</artifactId>
-  <version>0.6.0-SNAPSHOT</version>
+  <version>${gte.org.docopt.docopt.version}</version>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
